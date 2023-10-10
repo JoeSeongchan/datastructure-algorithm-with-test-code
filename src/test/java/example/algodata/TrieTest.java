@@ -11,7 +11,7 @@ class TrieTest {
     @DisplayName("문자열을 Trie에 저장한다.")
     void testInsert() {
         // given
-        Trie trie = new Trie();
+        TrieInterface trie = new Trie();
         // when
         trie.insert("seongchan");
         // then
@@ -22,7 +22,7 @@ class TrieTest {
     @DisplayName("Trie에 저장하지 않은 문자열이 존재하는지 확인하면 false를 리턴한다.")
     void testContain() {
         // given
-        Trie trie = new Trie();
+        TrieInterface trie = new Trie();
         // when
         trie.insert("seongchan");
         // then
